@@ -4,6 +4,7 @@ module.exports = {
     browser: true,
     node: true,
   },
+  parser: 'babel-eslint',
   extends: ['eslint:recommended'],
   plugins: ['prettier'],
   rules: {
