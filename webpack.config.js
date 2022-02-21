@@ -8,7 +8,7 @@ module.exports = {
     extensions: ['.js'], // 생략할 확장자
     alias: {
       // 경로 별칭
-      '@': path.resolve(__dirname, 'src/'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   entry: './src/main.js',

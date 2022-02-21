@@ -1,8 +1,16 @@
-import { Temp } from '@/components/base';
+import { Component } from '@/components/core';
+import { Footer } from '@/components/base';
 
-export default function App({ $target }) {
-  new Temp({
-    $target,
-    initialState: 'hi',
-  });
+export default class App extends Component {
+  template() {
+    return `
+      <footer class="footer"></footer>
+    `;
+  }
+
+  mounted() {
+    const $footer = this.$target.querySelector('.footer');
+
+    new Footer($footer);
+  }
 }

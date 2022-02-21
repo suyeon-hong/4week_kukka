@@ -1,5 +1,5 @@
 import App from './App.js';
 
-const $target = document.querySelector('.App');
+const $app = document.querySelector('.App');
 
-new App({ $target });
+new App($app);
