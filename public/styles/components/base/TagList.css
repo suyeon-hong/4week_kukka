@@ -1,0 +1,52 @@
+.tag-list {
+	margin-top: 15px;
+}
+
+.tag-item, .tag-link {
+	display: inline-block;
+}
+
+.tag-button {
+	min-width: 52px;
+	padding: 0 8px;
+	margin-right: 4px;
+	margin-bottom: 2px;
+	border: #ffcd32 1px solid;
+	border-radius: 10px;
+	vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -.15px;
+	color: #ffcd32;
+}
+
+.tag-button:last-of-type {
+	margin-right: 0;
+}
+
+.tag-button.gwang {
+	border-color: #a27fde;
+    color: #a27fde;
+}
+
+.tag-button.jam {
+	border-color: #46cfa7;
+    color: #46cfa7;
+}
+
+.tag-button.wolgye {
+	border-color: #ffa04d;
+    color: #ffa04d;
+}
+
+.tag-button.guro {
+	border-color: #68a4fe;
+    color: #68a4fe;
+}
+
+.tag-button.dongrae {
+	border-color: #00afe3;
+    color: #00afe3;
+}
