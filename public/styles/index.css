@@ -1,3 +1,7 @@
 @import './reset.css';
 @import './global.css';
 @import './components/base/Popup.css';
+@import "./components/base/GNB.css";
+@import './components/base/IFrame.css';
+@import './components/domain/Banner.css';
+@import './components/domain/Footer.css';
