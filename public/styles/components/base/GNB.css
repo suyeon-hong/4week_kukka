@@ -1,28 +1,33 @@
-header{
+.GNB-header{
     width: 100%;
     background: #fff;
-    position: fixed;
     left: 0;
     right: 0;
-    top: 0;
     z-index:10;
-}
 
-.GNB-header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: row;
-
+    padding: 0 70px;
     height: 130px;
-    width: 90%;
 
     margin: 0 auto;
 }
-.GNB-header .nav-menu-list a.active{
+.GNB-header.fixed{
+    position: fixed;
+    top: -50px;
+    padding-bottom: 10px;
+    border-bottom: 1px #ffcd32 solid;
+    box-shadow: 0 -1px 5px black;
+}
+.GNB-header .nav-menu-list span.active{
     color: #ffcd32;
 }
-.GNB-header .nav-menu-list a:hover:after{
+.GNB-header .nav-menu-list span:hover{
+    cursor: pointer;
+}
+.GNB-header .nav-menu-list span:hover:after{
     content: '';
     position: absolute;
     left: 0;
@@ -38,10 +43,15 @@ header{
 }
 
 .nav-user-list{
+    position: absolute;
+    width: 90%;
+    top: 10px;
+    left: 0;
     display: flex;
     justify-content: flex-end;
     padding: 10px;
     font-size: 14px;
+    z-index: 11;
 }
 .nav-user-list .item{
     position: relative;
@@ -77,9 +87,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 80%;
     height: 100%;
-    padding: 0 70px;
+    padding: 70px 70px 0 70px;
 }
 
 .nav-menu-list .item{
@@ -89,12 +99,13 @@ header{
 }
 
 .user-tab{
-    width: 13%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    padding-top: 70px;
 }
 
 .user-tab .user-info{

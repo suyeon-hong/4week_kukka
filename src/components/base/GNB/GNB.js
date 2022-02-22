@@ -1,10 +1,10 @@
 import { Component } from '@/components/core';
 const ITEMS = [
-  '유튜브',
-  '배너',
+  '꽃 정기 구독',
+  '꽃다발',
   '당일 배송',
   '플라워클래스',
-  '소품샵',
+  '동영상',
   '이벤트',
 ];
 
@@ -12,32 +12,33 @@ export default class GNB extends Component {
   setup() {
     this.$state = {
       current: '',
+      fixed: false,
     };
   }
 
   template() {
-    const { current } = this.$state;
+    const { current, fixed } = this.$state;
 
     return `
-    <div class="GNB-header">
+   <ul class="nav-user-list">
+     <li class="item"><a href="#">로그인</a></li>
+     <li class="item"><a href="#">회원가입 <span class="point">(1000포인트 지급!)</span></a></li>
+     <li class="item"><a href="#">꾸까 고객센터</a></li>
+     <li class="item"><a href="#">기업제휴</a></li>
+   </ul>
+    <div class="GNB-header ${fixed ? 'fixed' : ''}">
     <h1>
       ${LOGO_SVG}
     </h1>
         <nav class="navigation-bar">
-         <ul class="nav-user-list">
-           <li class="item"><a href="#">로그인</a></li>
-           <li class="item"><a href="#">회원가입 <span class="point">(1000포인트 지급!)</span></a></li>
-           <li class="item"><a href="#">꾸까 고객센터</a></li>
-           <li class="item"><a href="#">기업제휴</a></li>
-         </ul>
          <section class="nav-menu">
          <ul class="nav-menu-list " >
          ${ITEMS.map(
            (item) => `
           <li class="item">
-            <a href="#" class="${current === item ? 'active' : ''}">
+            <span class="${current === item ? 'active' : ''}">
               ${item}
-            </a>
+            </span>
           </li>`
          ).join('')}
           </ul>
@@ -60,7 +61,28 @@ export default class GNB extends Component {
 
   setEvent() {
     this.addEvent('click', '.nav-menu-list .item', (e) => {
-      this.setState({ current: e.target.innerHTML.trim() });
+      const targetMenu = e.target.innerHTML.trim();
+      this.setState({ current: targetMenu });
+      if (targetMenu === ITEMS[3]) {
+        document.querySelector('.carousel').scrollIntoView();
+        return;
+      }
+      if (targetMenu === ITEMS[4]) {
+        document.querySelector('.IFrame').scrollIntoView();
+      }
+    });
+    window.addEventListener('scroll', (e) => {
+      const { fixed } = this.$state;
+      if (window.scrollY >= 30) {
+        if (fixed === false) {
+          this.setState({ fixed: true });
+          return;
+        }
+        return;
+      }
+      if (fixed) {
+        this.setState({ fixed: false });
+      }
     });
   }
 }

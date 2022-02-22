@@ -12,7 +12,7 @@ export default class App extends Component {
         <div class="banner" aria-role="banner"></div>
       </div>
       <footer class="footer" aria-role="footer"></footer>
-      <aside class="popup"></aside>
+<!--      <aside class="popup"></aside>-->
     `;
   }
 
