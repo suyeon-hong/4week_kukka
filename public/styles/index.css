@@ -3,6 +3,8 @@
 
 /* components/base */
 @import "./components/base/GNB.css";
+@import './components/base/IFrame.css';
+
 /* components/domain */
 @import './components/domain/Banner.css';
 @import './components/domain/Footer.css';
