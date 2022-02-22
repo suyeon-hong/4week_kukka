@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
+const LinkTypePlugin =
+  require('html-webpack-link-type-plugin').HtmlWebpackLinkTypePlugin;
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -49,9 +51,11 @@ module.exports = {
         { from: 'public' }, // 정적 파일 저장할 폴더
       ],
     }),
+    new LinkTypePlugin({
+      '*.css': 'text/css',
+    }),
   ],
   devServer: {
-    // port: 3000,
     historyApiFallback: true,
   },
 };
