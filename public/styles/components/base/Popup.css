@@ -21,6 +21,7 @@
 .popupWrapper .popupInner{
   display:inline-block; 
   width:50%;
+  max-width: 700px;
   height: 80%;
   vertical-align:middle; 
   font-size:15px;
