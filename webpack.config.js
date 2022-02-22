@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
+const LinkTypePlugin =
+  require('html-webpack-link-type-plugin').HtmlWebpackLinkTypePlugin;
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -8,7 +10,7 @@ module.exports = {
     extensions: ['.js'], // 생략할 확장자
     alias: {
       // 경로 별칭
-      '@': path.resolve(__dirname, 'src/'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   entry: './src/main.js',
@@ -49,9 +51,11 @@ module.exports = {
         { from: 'public' }, // 정적 파일 저장할 폴더
       ],
     }),
+    new LinkTypePlugin({
+      '*.css': 'text/css',
+    }),
   ],
   devServer: {
-    // port: 3000,
     historyApiFallback: true,
   },
 };
