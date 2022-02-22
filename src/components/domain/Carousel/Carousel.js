@@ -104,6 +104,10 @@ export default class Carousel extends Component {
       <button class="more">더보기</button>
     </h3>
     <div class="carousel-wrapper">
+      <div class="carousel-nav-button" aria-role="nav">
+        <button class="prev" aria-label="이전으로"></button>
+        <button class="next" aria-label="다음으로"></button>
+      </div>
     <div data-id="${id}" class="carousel-active">
     <a href=${link} class="active-link">
       <img class="active-thmbnail" src=${src} alt=${desc} aria-hidden/>

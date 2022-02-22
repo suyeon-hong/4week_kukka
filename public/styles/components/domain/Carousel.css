@@ -31,6 +31,7 @@
 }
 
 .carousel-wrapper {
+	position: relative;
 	padding: 40px 0 120px;
 }
 
@@ -38,6 +39,26 @@
 	display: block;
 	content: '';
 	clear: both;
+}
+
+.carousel-nav-button button {
+	position: absolute;
+	top: 42%;
+	transform: translateY(-50%);
+	width: 84px;
+  height: 84px;
+	background-image: url('/images/icons.png');
+  background-size: 1252px 845px;
+}
+
+.carousel-nav-button button.prev {
+	left: -10%;
+	background-position: -1156px -248px;
+}
+
+.carousel-nav-button button.next {
+	right: -10%;
+	background-position: -1108px -492px;
 }
 
 .carousel-active, .carousel-list {
