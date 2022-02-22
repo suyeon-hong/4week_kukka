@@ -1,6 +1,7 @@
 import { Component } from '@/components/core';
-import { Banner } from '@/components/domain';
 import { GNB } from './components/base';
+import { Banner } from '@/components/domain';
+import { Footer } from '@/components/domain';
 
 export default class App extends Component {
   template() {
@@ -12,9 +13,12 @@ export default class App extends Component {
   }
 
   mounted() {
-    const $main = this.$target.querySelector('.main');
     const $header = this.$target.querySelector('.header');
+    const $main = this.$target.querySelector('.main');
+    const $footer = this.$target.querySelector('.footer');
+    
     new GNB($header);
     new Banner($main);
+    new Footer($footer);
   }
 }

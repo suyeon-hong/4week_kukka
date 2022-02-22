@@ -5,3 +5,4 @@
 @import "./components/base/GNB.css";
 /* components/domain */
 @import './components/domain/Banner.css';
+@import './components/domain/Footer.css';
