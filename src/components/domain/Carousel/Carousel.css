@@ -79,6 +79,18 @@
 	bottom: 7%;
 }
 
+.carousel-active .active-link {
+	display: block;
+}
+
+.active-thmbnail {
+	transition: transform .2s ease-out 0s;
+}
+
+.active-link:hover .active-thmbnail {
+	transform: scale(1.05);
+}
+
 
 .carousel-active .active-desc {
 	overflow: hidden;
@@ -116,6 +128,10 @@
 	width: 42%;
 }
 
+.carousel-link:hover .carousel-thmbnail{
+	transform: scale(1.05);
+}
+
 .carousel-item:last-of-type{
 	margin-top: 5%;
   padding-top: 5%;
@@ -148,6 +164,12 @@
 	font-weight: 500;
 	letter-spacing: -.24px;
 }
+
+.carousel-thmbnail {
+	transition: transform .2s ease-out 0s;
+}
+
+
 
 
 
