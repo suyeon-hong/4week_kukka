@@ -1,4 +1,8 @@
 
+.banner-list {
+	overflow: hidden;
+}
+
 .banner-item {
 	position: relative;
 	padding: 0 !important;
@@ -10,6 +14,16 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.banner-link {
+	display: block;
+	overflow: hidden;
+	
+}
+
+.banner-link:hover .banner-img{
+	transform: scale(1.05);
 }
 
 .banner-title {
