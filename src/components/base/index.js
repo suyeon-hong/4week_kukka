@@ -1,2 +1,1 @@
-// temp
-export { default as Temp } from './Temp/Temp';
+export { default as IFrame } from './IFrame/IFrame';
