@@ -35,7 +35,7 @@ export default class Banner extends Component {
 				${items
           .map(
             ({ id, src, link, direction, title, desc, more }) => `
-					<li class="col-md-6 banner-item" id='${id}'>
+					<li class="col-sm-6 banner-item" id='${id}'>
 					<a href=${link} class="banner-link">
 					<img class="banner-img" src="${src}" alt="" aria-hidden/>
 					<div class="info ${direction}">
