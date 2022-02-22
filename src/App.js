@@ -1,8 +1,5 @@
-import { Temp } from '@/components/base';
+import GNB from '@/components/base/GNB/GNB';
 
-export default function App({ $target }) {
-  new Temp({
-    $target,
-    initialState: 'hi',
-  });
+export default function App($target) {
+  new GNB($target);
 }
