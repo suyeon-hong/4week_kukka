@@ -1,23 +1,31 @@
 import { Component } from '@/components/core';
-import { Banner, Carousel } from '@/components/domain';
+import { Banner, Carousel, Footer } from '@/components/domain';
+import { GNB, IFrame } from './components/base';
 
 export default class App extends Component {
   template() {
     return `
-      <header id="header"></header>
-      <div id="main" aria-role="main">
-        <div id="carousel" aria-role="carousel"></div>
-        <div id="banner" aria-role="banner"></div>
+      <header class="header"></header>
+      <div class="main" aria-role="main">
+        <div class="IFrame"></div>
+        <div class="carousel" aria-role="carousel"></div>
+        <div class="banner" aria-role="banner"></div>
       </div>
-      <footer id="footer"></footer>
+      <footer class="footer" aria-role="footer"></footer>
     `;
   }
 
   mounted() {
-    const $carousel = this.$target.querySelector('#carousel');
-    const $banner = this.$target.querySelector('#banner');
-
+    const $header = this.$target.querySelector('.header');
+    const $IFrame = this.$target.querySelector('.IFrame');
+    const $carousel = this.$target.querySelector('.carousel');
+    const $banner = this.$target.querySelector('.banner');
+    const $footer = this.$target.querySelector('.footer');
+    
+    new GNB($header);
+    new IFrame($IFrame);
     new Carousel($carousel);
     new Banner($banner);
+    new Footer($footer);
   }
 }
