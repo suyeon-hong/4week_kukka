@@ -1,0 +1,134 @@
+#carousel {
+	max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+#carousel .title {
+	position: relative;
+	margin-top: 90px;
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 300;
+	letter-spacing: -.45px;
+}
+
+#carousel .title strong {
+	font-weight: 700;
+}
+
+#carousel .title .more {
+	display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+	transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -.21px;
+  color: #787878;
+}
+
+.carousel-wrapper {
+	padding: 40px 0 120px;
+}
+
+.carousel-wrapper::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.carousel-active, .carousel-list {
+	float: left;
+	width: 50%;
+}
+
+/* carousel-active */
+
+.carousel-active {
+	position: relative;
+	padding-right: 2%;
+}
+
+.carousel-active .active-info {
+	position: absolute;
+	left: 35px;
+	bottom: 7%;
+}
+
+
+.carousel-active .active-desc {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 300;
+	letter-spacing: -.27px;
+}
+
+.carousel-active .active-title {
+	padding-right: 20px;
+  font-size: 25px;
+  line-height: 37px;
+  font-weight: 700;
+  letter-spacing: -.38px;
+}
+
+.carousel-active .active-title::after {
+	display: inline-block;
+	content: '';
+	margin-left: 4px;
+	background-image: url('/images/icons.png');
+  background-position: -1238px -375px;
+  background-size: 1252px 845px;
+  width: 11px;
+  height: 19px;
+}
+
+/* carousel-list */
+
+.carousel-link{
+	float: left;
+	width: 42%;
+}
+
+.carousel-item:last-of-type{
+	margin-top: 5%;
+  padding-top: 5%;
+  border-top: #d3d3d3 1px solid;
+}
+.carousel-item::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.carousel-info {
+	float: left;
+	width: 58%;
+	padding-left: 20px;
+}
+
+.carousel-title {
+	margin-top: 2px;
+	font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -.24px;
+}
+
+.carousel-price {
+	margin-top: 5px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	letter-spacing: -.24px;
+}
+
+
+
+
+
