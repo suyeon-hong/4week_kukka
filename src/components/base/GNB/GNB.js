@@ -19,7 +19,7 @@ export default class GNB extends Component {
     const { current } = this.$state;
 
     return `
-    <header class="GNB-header">
+    <div class="GNB-header">
     <h1>
       ${LOGO_SVG}
     </h1>
@@ -54,7 +54,7 @@ export default class GNB extends Component {
           </ul>
         </section>
         </nav>
-    </header> 
+    </div> 
     `;
   }
 

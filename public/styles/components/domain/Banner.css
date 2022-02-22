@@ -24,7 +24,7 @@
 .banner-link {
 	display: block;
 	overflow: hidden;
-	
+
 }
 
 .banner-link:hover .banner-img{
@@ -63,4 +63,4 @@
 	font-weight: 300;
 	letter-spacing: -.21px;
 	background-color: transparent;
-}
+} 
