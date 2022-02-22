@@ -47,7 +47,7 @@
 	transform: translateY(-50%);
 	width: 84px;
   height: 84px;
-	background-image: url('/images/icons.png');
+	background-image: url('https://quizzical-carson-b46780.netlify.app/images/icons.png');
   background-size: 1252px 845px;
 }
 
@@ -102,7 +102,7 @@
 	display: inline-block;
 	content: '';
 	margin-left: 4px;
-	background-image: url('/images/icons.png');
+	background-image: url('https://quizzical-carson-b46780.netlify.app/images/icons.png');
   background-position: -1238px -375px;
   background-size: 1252px 845px;
   width: 11px;

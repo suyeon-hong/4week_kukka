@@ -113,7 +113,7 @@
 }
 .user-tab .user-info:before{
     content: '';
-    background: url('/images/icons.png') no-repeat -38px -817px;
+    background: url('https://quizzical-carson-b46780.netlify.app/images/icons.png') no-repeat -38px -817px;
     position: absolute;
     left: 0;
     top: -15px;
@@ -127,7 +127,7 @@
 
 .user-tab .shop-list:before{
     content: '';
-    background: url('/images/icons.png') no-repeat -73px -817px;
+    background: url('https://quizzical-carson-b46780.netlify.app/images/icons.png') no-repeat -73px -817px;
     position: absolute;
     left: 0;
     top: -15px;

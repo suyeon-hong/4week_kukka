@@ -1,4 +1,5 @@
 import { Component } from '@/components/core';
+import './IFrame.css';
 
 export default class IFrame extends Component {
   template() {

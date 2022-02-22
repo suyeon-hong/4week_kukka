@@ -1,4 +1,5 @@
 import { Component } from '@/components/core';
+import './Footer.css';
 
 export default class Footer extends Component {
   template() {

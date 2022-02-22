@@ -1,5 +1,7 @@
 import { Component } from '@/components/core';
 import { END_POINT } from '@/utils/constants';
+import './Carousel.css';
+import './TagList.css';
 
 const getColor = (location) => {
   switch (location) {

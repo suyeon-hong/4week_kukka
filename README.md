@@ -4,7 +4,7 @@
 
 ## 🚀 정보
 
-- [배포주소 바로가기]()
+- [배포주소 바로가기](https://quizzical-carson-b46780.netlify.app/)
 - [노션 바로가기](https://github.com/wanted-team2/4week_kukka.git)
 
 <br>
@@ -53,7 +53,7 @@ $ yarn start:webpack
 
 #### ✔ 유제호
 
-- 
+- `Header` 컴포넌트 구현
 
 #### ✔ 홍수연
 

@@ -1,4 +1,5 @@
 import { Component } from '@/components/core';
+import './Banner.css';
 
 export default class Banner extends Component {
   setup() {

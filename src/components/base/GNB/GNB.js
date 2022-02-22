@@ -1,4 +1,6 @@
 import { Component } from '@/components/core';
+import './GNB.css';
+
 const ITEMS = [
   '꽃 정기 구독',
   '꽃다발',
@@ -28,7 +30,9 @@ export default class GNB extends Component {
    </ul>
     <div class="GNB-header ${fixed ? 'fixed' : ''}">
     <h1>
+      <a href="#">
       ${LOGO_SVG}
+</a>
     </h1>
         <nav class="navigation-bar">
          <section class="nav-menu">
@@ -71,7 +75,7 @@ export default class GNB extends Component {
         document.querySelector('.IFrame').scrollIntoView();
       }
     });
-    window.addEventListener('scroll', (e) => {
+    window.addEventListener('scroll', () => {
       const { fixed } = this.$state;
       if (window.scrollY >= 30) {
         if (fixed === false) {

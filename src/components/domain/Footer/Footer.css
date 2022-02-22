@@ -41,17 +41,17 @@ footer{
 }
 
 .facebook{
-	background-image: url(../../../images/icons.png);
+	background-image: url('https://quizzical-carson-b46780.netlify.app/images/icons.png');
 	background-position: -42px -775px;
 }
 
 .instargram{
-	background-image: url(../../../images/icons.png);
+	background-image: url('https://quizzical-carson-b46780.netlify.app/images/icons.png');
 	background-position: -1214px -438px;
 }
 
 .youtube{
-	background-image: url(../../../images/icons.png);
+	background-image: url('https://quizzical-carson-b46780.netlify.app/images/icons.png');
 	background-position: -1164px -685px;
 }
 
@@ -129,7 +129,7 @@ footer{
 	bottom: 20px;
 	width: 150px;
 	height: 63px;
-	background-image: url(../../../images/icons.png);
+	background-image: url('https://quizzical-carson-b46780.netlify.app/images/icons.png');
 	background-position: 0 -612px;
 	background-size: 1252px 845px;
 }

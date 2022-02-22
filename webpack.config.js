@@ -1,9 +1,7 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
-const LinkTypePlugin =
-  require('html-webpack-link-type-plugin').HtmlWebpackLinkTypePlugin;
 const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   resolve: {
@@ -20,6 +18,7 @@ module.exports = {
   },
   module: {
     rules: [
+      { test: /\.(png|jpe?g|gif)$/i, loader: 'file-loader' },
       {
         test: /\.js$/,
         exclude: /node_modules\/(?!axios)/, // 제외할 대상 복수 등록
@@ -35,9 +34,13 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          // 먼저 해석이 필요한 로더를 나중에 작성
-          'css-loader', // css loader 해줌
-          'postcss-loader', // css 후처리로 프리픽서 붙여주고
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '.',
+            },
+          },
+          'css-loader',
         ],
       },
     ],
@@ -48,12 +51,14 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: 'public' }, // 정적 파일 저장할 폴더
+        {
+          from: __dirname + '/src/public/',
+          to: '.',
+          noErrorOnMissing: true,
+        }, // 정적 파일 저장할 폴더
       ],
     }),
-    new LinkTypePlugin({
-      '*.css': 'text/css',
-    }),
+    new MiniCssExtractPlugin(),
   ],
   devServer: {
     historyApiFallback: true,

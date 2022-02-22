@@ -1,6 +1,8 @@
 import { Component } from '@/components/core';
 import { Banner, Carousel, Footer } from '@/components/domain';
 import { GNB, IFrame, Popup } from './components/base';
+import './global.css';
+import './reset.css';
 
 export default class App extends Component {
   template() {
