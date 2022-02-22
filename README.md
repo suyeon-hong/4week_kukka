@@ -49,7 +49,7 @@ $ yarn start:webpack
 
 #### ✔ 고병표
 
-- 
+- `Youtube` , `Popup` 컴포넌트 구현
 
 #### ✔ 유제호
 
@@ -57,7 +57,7 @@ $ yarn start:webpack
 
 #### ✔ 홍수연
 
-- 'Footer' 구현, 컴포넌트 병합
+- `Footer` 구현, 컴포넌트 병합
 
 <br>
 <br>
