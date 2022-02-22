@@ -1,5 +1,7 @@
 @import './reset.css';
 @import './global.css';
 
+/* components/base */
+@import "./components/base/GNB.css";
 /* components/domain */
 @import './components/domain/Banner.css';
