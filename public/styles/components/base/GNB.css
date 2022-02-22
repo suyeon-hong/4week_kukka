@@ -1,0 +1,120 @@
+.GNB-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+
+    height: 130px;
+    width: 90%;
+
+    margin: 0 auto;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.GNB-header .nav-menu-list a.active{
+    color: #ffcd32;
+}
+.GNB-header .nav-menu-list a:hover:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background: #ffcd32;
+}
+
+.navigation-bar{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-user-list{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 14px;
+}
+.nav-user-list .item{
+    position: relative;
+    margin-left: 30px;
+}
+
+.nav-user-list .item .point{
+    color: #46cfa7;
+}
+
+.nav-user-list .item:first-child::after {
+    background: none;
+}
+
+.nav-user-list .item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -15px;
+    width: 1px;
+    height: 16px;
+    background: #d3d3d3;
+}
+
+.nav-menu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    padding: 0 70px;
+}
+
+.nav-menu-list .item{
+    position: relative;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.user-tab{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.user-tab .user-info{
+    position: relative;
+}
+.user-tab .user-info:before{
+    content: '';
+    background: url('/images/icons.png') no-repeat -38px -817px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 25px;
+    height: 28px;
+}
+
+.user-tab .shop-list{
+    position: relative;
+}
+
+.user-tab .shop-list:before{
+    content: '';
+    background: url('/images/icons.png') no-repeat -73px -817px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 25px;
+    height: 28px;
+}
