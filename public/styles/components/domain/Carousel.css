@@ -1,10 +1,10 @@
-#carousel {
+.carousel {
 	max-width: 1240px;
   margin: 0 auto;
   padding: 0 60px;
 }
 
-#carousel .title {
+.carousel .title {
 	position: relative;
 	margin-top: 90px;
 	font-size: 30px;
@@ -13,11 +13,11 @@
 	letter-spacing: -.45px;
 }
 
-#carousel .title strong {
+.carousel .title strong {
 	font-weight: 700;
 }
 
-#carousel .title .more {
+.carousel .title .more {
 	display: block;
   position: absolute;
   top: 50%;
