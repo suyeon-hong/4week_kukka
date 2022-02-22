@@ -53,7 +53,7 @@ $ yarn start:webpack
 
 #### ✔ 유제호
 
-- `Header` 컴포넌트 구현
+- `Header` 컴포넌트 구현, webpack 설정, 배포
 
 #### ✔ 홍수연
 
