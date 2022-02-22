@@ -1,5 +1,5 @@
 import { Component } from '@/components/core';
-import { Footer } from '@/components/base';
+import { Footer } from '@/components/domain';
 
 export default class App extends Component {
   template() {

@@ -1,1 +1,1 @@
-// export default
+export { default as Footer } from './Footer/Footer';
