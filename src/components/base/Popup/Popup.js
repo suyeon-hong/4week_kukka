@@ -1,4 +1,5 @@
 import { Component } from '@/components/core';
+import './Popup.css';
 
 export default class Popup extends Component {
   template() {
