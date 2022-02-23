@@ -42,6 +42,42 @@ $ yarn start:webpack
 
 
 ### 📝 기능 목록 명세
+- 최신 문법의 자바스크립트 코드를 ie8버전으로 컴파일하기 위해 babel을 사용했습니다. 
+```js
+// babel.config.json
+{
+  "presets": [["@babel/preset-env", { "targets": {"ie": 8} }]]
+}
+```
+또한 postcss의 autoprefixer 기능을 활용하여 각 브라우저의 벤더 프리픽스를 자동으로 붙여주었습니다. 
+```js
+// postcss.config.js
+module.exports = {
+  plugins: [require('autoprefixer')],
+};
+
+// package.json
+ "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie 8 - 10"
+  ],
+
+// webpack.config.js
+	use: [
+		{
+			loader: MiniCssExtractPlugin.loader,
+			options: {
+				publicPath: '.',
+			},
+		},
+		'css-loader',
+		'postcss-loader',
+	],
+```
+마지막으로 css 압축과 JS 문법 컴파일, 각 loader 들을 한꺼번에 처리하기 위해 webpack을 사용하였습니다.
+
+### ✨ 역할
 
 #### ✔ 김지영
 
