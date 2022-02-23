@@ -64,16 +64,16 @@ module.exports = {
   ],
 
 // webpack.config.js
-	use: [
-		{
-			loader: MiniCssExtractPlugin.loader,
-			options: {
-				publicPath: '.',
-			},
-		},
-		'css-loader',
-		'postcss-loader',
-	],
+  use: [
+    {
+      loader: MiniCssExtractPlugin.loader,
+      options: {
+      publicPath: '.',
+      },
+    },
+    'css-loader',
+    'postcss-loader',
+  ],
 ```
 마지막으로 css 압축과 JS 문법 컴파일, 각 loader 들을 한꺼번에 처리하기 위해 webpack을 사용하였습니다.
 
