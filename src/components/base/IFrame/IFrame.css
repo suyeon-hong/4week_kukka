@@ -4,19 +4,20 @@
 
 .IFrame {
   width: 100%;
-  padding-top: 130px;
+  padding-top: 80px;
 }
 
 .IFrameWrapper{
   width: 100%;
   text-align: center;
+  padding: 0 60px;
 }
 
 @media(min-width: 1024px) {
 .IFrameWrapper{
     max-width: 1240px;
     margin: 0 auto;
-    padding: 100px 60px;
+    padding: 0 60px;
   } 
 }
 
@@ -28,5 +29,6 @@
 
 .IFrameWrapper .IFrame {
   width: 100%;
-  height: 315px;
+  padding: 0;
+  height: 515px;
 }

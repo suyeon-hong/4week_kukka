@@ -7,14 +7,14 @@ import './reset.css';
 export default class App extends Component {
   template() {
     return `
-      <header class="header"></header>
+      <div class="header" aria-role="header"></div>
       <div class="main" aria-role="main">
+        <div class="popup" aria-role="aside"></div>
         <div class="IFrame"></div>
         <div class="carousel" aria-role="carousel"></div>
         <div class="banner" aria-role="banner"></div>
       </div>
-      <footer class="footer" aria-role="footer"></footer>
-<!--      <aside class="popup"></aside>-->
+      <div class="footer" aria-role="footer"></div>
     `;
   }
 
