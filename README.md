@@ -14,7 +14,7 @@
 1. 상단 `Code` 버튼을 눌러 레포지토리를 클론 받습니다.
 
 ```
-$ git clone https://github.com/wanted-team2/3week_ncnc.git
+$ git clone https://github.com/wanted-team2/4week_kukka.git
 ```
 
 2. 패키지를 설치합니다.
@@ -36,7 +36,7 @@ $ yarn start:webpack
 | [김지영(팀장)](https://github.com/Jeong-jeong)                                                                                    | [고병표](https://github.com/kokoball)                                                                                            | [유제호](https://github.com/ludacirs)                                                                                           | [홍수연](https://github.com/suyeon-hong)                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="https://user-images.githubusercontent.com/68528752/153546074-abd9a7df-771c-4f14-8a2f-a77246210b1c.jpeg" width="400px"/> | <img src="https://user-images.githubusercontent.com/68528752/153546140-b58f43fe-4730-46ca-bfda-0b048f36d24f.JPG" width="400px"/> | <img src="https://user-images.githubusercontent.com/68528752/153545718-c688e091-53a3-4e30-97fd-a2f00ab97aa8.JPG" width="400px"> | <img src="https://user-images.githubusercontent.com/68528752/153545721-ecc413f4-9d1b-45e0-9909-423c27128b1c.jpeg" width="400px"> |
-| [🚀 회고]()                                                                                    |                                                                                                                                  |                                                                                                                                 |                                                                                                                                  |
+|                                                                                    |                                                                                                                                  |                                                                                                                                 |                                                                                                                                  |
 
 <br>
 
@@ -45,7 +45,8 @@ $ yarn start:webpack
 
 #### ✔ 김지영
 
-- 
+- 프로젝트 기초 세팅, webpack, babel, postcss 설정
+- `Banner`, `Carousel` 컴포넌트 구현
 
 #### ✔ 고병표
 
@@ -66,5 +67,22 @@ $ yarn start:webpack
 ## 📈 디렉토리 구조
 
 ```
-
+.
+├── README.md
+├── babel.config.json
+├── package.json
+├── postcss.config.js
+├── src
+│   ├── App.js
+│   ├── components
+│   ├── global.css
+│   ├── index.html
+│   ├── main.js
+│   ├── pages
+│   ├── public
+│   ├── reset.css
+│   └── utils
+├── webpack.config.js
+├── yarn-error.log
+└── yarn.lock
 ```
