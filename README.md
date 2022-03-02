@@ -1,11 +1,7 @@
-# 목표는 취업이조 2팀
+# 웹 사이트 클론
 
-<br>
-
-## 🚀 정보
-
-- [배포주소 바로가기](https://quizzical-carson-b46780.netlify.app/)
-- [노션 바로가기](https://github.com/wanted-team2/4week_kukka.git)
+👉 [배포주소 바로가기](https://quizzical-carson-b46780.netlify.app/)<br>
+👉 [회고록 바로가기](https://velog.io/@suyeon-hong/4%EC%A3%BC%EC%B0%A8-%EC%9B%90%ED%8B%B0%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9%EC%BD%94%EC%8A%A4-%ED%9A%8C%EA%B3%A0)
 
 <br>
 
@@ -28,15 +24,6 @@ $ yarn install
 ```
 $ yarn start:webpack
 ```
-
-<br>
-
-## 😎 팀원
-
-| [김지영(팀장)](https://github.com/Jeong-jeong)                                                                                    | [고병표](https://github.com/kokoball)                                                                                            | [유제호](https://github.com/ludacirs)                                                                                           | [홍수연](https://github.com/suyeon-hong)                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://user-images.githubusercontent.com/68528752/153546074-abd9a7df-771c-4f14-8a2f-a77246210b1c.jpeg" width="400px"/> | <img src="https://user-images.githubusercontent.com/68528752/153546140-b58f43fe-4730-46ca-bfda-0b048f36d24f.JPG" width="400px"/> | <img src="https://user-images.githubusercontent.com/68528752/153545718-c688e091-53a3-4e30-97fd-a2f00ab97aa8.JPG" width="400px"> | <img src="https://user-images.githubusercontent.com/68528752/153545721-ecc413f4-9d1b-45e0-9909-423c27128b1c.jpeg" width="400px"> |
-|                                                                                    |                                                                                                                                  |                                                                                                                                 |                                                                                                                                  |
 
 <br>
 
