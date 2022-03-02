@@ -1,6 +1,9 @@
-# 웹 사이트 클론
+# 꾸까 사이트 클론
 
 👉 [회고록 바로가기](https://velog.io/@suyeon-hong/4%EC%A3%BC%EC%B0%A8-%EC%9B%90%ED%8B%B0%EB%93%9C-%ED%94%84%EB%A6%AC%EC%98%A8%EB%B3%B4%EB%94%A9%EC%BD%94%EC%8A%A4-%ED%9A%8C%EA%B3%A0)
+
+![1](https://user-images.githubusercontent.com/78653426/156376790-35ed5729-1c6f-4a89-8926-31fb67e56bc9.png)
+
 
 <br>
 
