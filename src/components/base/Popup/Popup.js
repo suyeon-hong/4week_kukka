@@ -4,16 +4,16 @@ import './Popup.css';
 export default class Popup extends Component {
   template() {
     return `
-        <a href="#popupBox" class="openBtn" style="display:none;"></a>
-        <div id="popupBox" class="popupWrapper" style="display:block;">
+        <div id="popupBox" class="popupWrapper">
           <div class="popupInner">
             <img class="popupImg" src="./images/popupimg.png" alt="">
-            <div class="closeBox">
+            <div class="btnBox">
               <div>              
-                <button type="button" class="blankBtn">X</button>
-                <span class="closeText">오늘은 더 이상 보지 않기</span>
+                <input type="checkbox" id="check" />
+                <label for="check">오늘은 더 이상 보지 않기</label>
               </div>
-              <button type="button" class="closeBtn">X</button>            
+              <div class="closeBtn">
+              </div>
             </div>
           </div>
         </div>
@@ -22,14 +22,24 @@ export default class Popup extends Component {
 
   setEvent() {
     window.onload = function () {
-      var target = document.querySelectorAll('.openBtn');
-      var popupBtnClose = document.querySelectorAll('.popupWrapper .closeBox');
+      var isCookie = document.cookie.indexOf('isdone');
+      var popupBox = document.querySelector('#popupBox');
+      var closeBtn = document.querySelector('.closeBtn');
+      var popupStyle = '';
 
-      for (var j = 0; j < target.length; j++) {
-        popupBtnClose[j].addEventListener('click', function () {
-          this.parentNode.parentNode.style.display = 'none';
-        });
-      }
+      isCookie === -1 ? (popupStyle = 'block') : (popupStyle = 'none');
+      popupBox.style.display = popupStyle;
+
+      closeBtn.addEventListener('click', function (e) {
+        var target = e.target.closest('#popupBox');
+        target.style.display = 'none';
+
+        if (target.querySelector('#check').checked) {
+          var date = new Date();
+          date.setDate(date.getDate() + 1);
+          document.cookie = `cookie=isdone; path=/; expires=${date.toGMTString()}`;
+        }
+      });
     };
   }
 }
